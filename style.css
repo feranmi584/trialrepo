@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6a88a6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    margin-top: 10px;
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    position: relative;
+    animation: fade 1.5s ease-in-out; /* Smooth fade transition */
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Specific styling for the third slide */
+.slide:nth-child(3) {
+    background: rgba(0, 0, 0, 0.5); /* Faded background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Caption styling for the third slide */
+.slide:nth-child(3) .caption {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Smooth fade animation */
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.caption {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #004080;
+}
+
+footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
